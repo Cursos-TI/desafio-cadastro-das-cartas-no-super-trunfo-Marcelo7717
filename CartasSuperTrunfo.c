@@ -10,6 +10,9 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
+    // Adição do desafio de nivel aventureiro 
+    float densidade1;
+    float PPC1;
 
     // Dados da Segunda Carta
     char estado2;
@@ -19,7 +22,9 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
-
+    // Adição do desafio de nivel aventureiro 
+    float densidade2;
+    float PPC2;
 
     // Fazendo a Primeira Carta
     printf("Digite os dados da carta 1:\n");
@@ -37,7 +42,10 @@ int main() {
     scanf("%f", &pib1);
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);
-  
+    // Adição do desafio de nivel aventureiro 
+    densidade1 = populacao1 / area1;
+    PPC1 = pib1 / populacao1;
+
     // Fazendo a Segunda Carta
     printf("\nDigite os dados da carta 2:\n");
     printf("Estado (letra de A a H): ");
@@ -54,7 +62,9 @@ int main() {
     scanf("%f", &pib2);
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
-  
+    // Adição do desafio de nivel aventureiro 
+    densidade2 = populacao2 / area2;
+    PPC2 = pib2 / populacao2;
 
     // Exibição das Cartas
     printf("\n--- Carta 1 ---\n");
@@ -65,6 +75,9 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+    // Adição do desafio de nivel aventureiro 
+    printf("Densidade Demográfica: %.2f hab/km²\n", densidade1);
+    printf("PIB per capita: R$ %.2f\n", PPC1);
 
     printf("\n--- Carta 2 ---\n");
     printf("Estado: %c\n", estado2);
@@ -74,7 +87,9 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos Turísticos: %d\n", pontosTuristicos2);
+    // Adição do desafio de nivel aventureiro 
+    printf("Densidade Demográfica: %.2f hab/km²\n", densidade2);
+    printf("PIB per capita: R$ %.2f\n", PPC1);
 
-    
     return 0;
 }
