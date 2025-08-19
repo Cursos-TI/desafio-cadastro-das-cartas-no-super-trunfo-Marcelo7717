@@ -89,7 +89,7 @@ int main() {
     printf("Pontos Turísticos: %d\n", pontosTuristicos2);
     // Adição do desafio de nivel aventureiro 
     printf("Densidade Demográfica: %.2f hab/km²\n", densidade2);
-    printf("PIB per capita: R$ %.2f\n", PPC1);
+    printf("PIB per capita: R$ %.2f\n", PPC2);
 
     return 0;
 }
